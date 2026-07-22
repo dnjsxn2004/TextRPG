@@ -27,6 +27,31 @@ void Player::setdefence(int defence)
 	this->defence = defence;
 };
 
+void Player::setlevel(int level)
+{
+	this->level = level;
+};
+
+void Player::setMaxExp(int MaxExp)
+{
+	this->maxExp = MaxExp;
+};
+
+void Player::setMaxHp(int maxHp)
+{
+	this->maxHp = maxHp;
+}
+
+void Player::setExp(int exp)
+{
+	this->exp = exp;
+}
+
+void Player::setMaxMp(int maxMp)
+{
+	this->maxMp = maxMp;
+}
+
 void Player::printplayerStatus()
 {
 	std::cout << "================================" << std::endl;

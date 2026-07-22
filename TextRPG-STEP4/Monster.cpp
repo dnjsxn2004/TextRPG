@@ -40,4 +40,20 @@ void Monster::damageTaken(int damage, int defence, std::string name)
 
 };
 
+void Monster::SkillDamageTaken(int damage, std::string name)
+{
+	if ((damage - defence) <= 0)
+	{
+		this->hp -= 1;
+
+		std::cout << "1 damage to " << name << " !!" << std::endl;
+	}
+	else
+	{
+		this->hp -= (damage - defence);
+
+		std::cout << (damage - defence) << " damage to " << name << " !!" << std::endl;
+	}
+};
+
 

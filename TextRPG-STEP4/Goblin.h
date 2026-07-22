@@ -8,7 +8,8 @@
 class Goblin : public Monster
 {
 public:
-	Goblin(std::string name = "Goblin", int hp = 1000, int power = 10, int defence = 5, std::string dropItemName = "Goblin Tendon", int dropItemPrice = 10) : Monster(name, hp, power, defence, dropItemName, dropItemPrice)
+	Goblin(std::string name = "Goblin", int hp = 1000, int power = 10, int defence = 5, std::string dropItemName = "Goblin Tendon", int dropItemPrice = 10, int exp = 200, int level = 3)
+		: Monster(name, hp, power, defence, dropItemName, dropItemPrice, exp, level)
 	{
 	}
 
